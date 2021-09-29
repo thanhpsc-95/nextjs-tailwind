@@ -44,6 +44,10 @@ const Layout = ({
       <NextSeo
         title={title}
         description={description}
+        canonical="/"
+        facebook={{
+          appId: process.env.FACEBOOK_CLIENT_ID,
+        }}
         openGraph={{
           title,
           description,
@@ -51,7 +55,7 @@ const Layout = ({
           type: "website",
           images: [
             {
-              url: `${url}/logo.png`,
+              url: `${"/logo.png"}`,
               width: 800,
               height: 600,
               alt: "Og Image Alt",
