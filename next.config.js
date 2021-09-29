@@ -1,3 +1,7 @@
 module.exports = {
-    trailingSlash: false
+  trailingSlash: false,
+  //remotehost import here
+  images: {
+    domains: ["images.unsplash.com", "tailwindui.com"],
+  },
 };
